@@ -8,14 +8,23 @@
 
 import UIKit
 
+
 class WelcomeViewController: UIViewController {
 
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var titleLabel : UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+        titleLabel.text = K.appName
+        
+        /*let titleText =
+        var count = 1
+        for letter in titleText {
+            Timer.scheduledTimer(withTimeInterval: 1.0 * Double(count), repeats: false) { (nil) in
+                self.titleLabel.text?.append(letter)
+            }
+            count += 1
+        }*/
     }
     
 
